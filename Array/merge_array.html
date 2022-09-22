@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merge 2 array</title>
+    <script>
+        let arr1 = [1,5,99,12,25,34,35,12]
+        let arr2 = [17,21,67,8,7,56]
+        let arr3 = []
+
+        for(i=0;i<arr1.length;i++){
+            arr3[i] =arr1[i];
+        }
+        for(i=0; i<arr2.length;i++){
+            arr3[arr1.length+i] = arr2[i];
+        }
+        console.log(arr3)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

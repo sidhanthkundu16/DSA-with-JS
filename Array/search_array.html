@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Search element in Array</title>
     <script>
-        let arr = [12,45,23,47,13,27,18,11,9,33,22,16]
-        let integer = 23;
+        
+        let arr = [12, 45, 23, 47, 13, 27, 18, 11, 9, 33, 22, 16];
+        
+      function run() {
+        let integer = document.getElementById("integer").value;
+        integer = parseInt(integer);
         for (let i = 0; i < arr.length; i++) {
-            if(arr[i] == integer){
-                console.log(i , "element found")
-                break;
-            }
-            
+          if (arr[i] == integer) {
+            console.log( "Element", arr[i] , "found at" ,i , "index"); 
+          }
         }
+        console.log(arr);
+      }
     </script>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <input type="number" id="integer" placeholder="element" />
+    <button onclick="run()">Click</button>
+  </body>
 </html>
