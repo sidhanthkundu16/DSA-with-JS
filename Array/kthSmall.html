@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function kthSmallest(arr, N ,K) {
+        arr.sort((a,b) => a-b)
+        return arr[K-1]
+      }
+      let arr = [23, 12, 16, 10, 19, 25, 45, 77, 65];
+      let N = arr.length;   
+      let K = 2;
+      console.log("Kth smallest element is " + kthSmallest(arr,N,K))
+      console.log(arr.sort( ))
+
+    </script>
+  </head>
+  <body></body>
+</html>
